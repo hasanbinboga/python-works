@@ -99,3 +99,7 @@ plt.show()
 
 print(test_predict.shape)
 print(np.arange(len(train_predict) + (time_step * 2) + 1, len(scaled_data) + 1).shape)
+
+# Modeli ve ağırlıkları kaydet
+model.save("lstm_model.h5")
+print("Model kaydedildi.")
